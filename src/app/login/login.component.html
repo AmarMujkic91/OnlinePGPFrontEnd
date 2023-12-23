@@ -1,0 +1,27 @@
+<div style="background-image: linear-gradient(lightblue, white);
+            border-radius: 13px;
+            text-align: center;
+            margin:auto;
+            margin-top:16%;
+            width:45%;
+            padding: 20px">
+
+  <div class="mb-3 row">
+    <label for="txtKorisnickoIme" class="col-sm-2 col-form-label" style="color: #446878">Korisnicko ime</label>
+    <div class="col-sm-3">
+      <input id="txtKorisnickoIme" [(ngModel)]="txtKorisnickoIme" class="form-control" style="color: #446878">
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <label for="txtLozinka" class="col-sm-2 col-form-label" style="color: #446878">Lozinka</label>
+    <div class="col-sm-3">
+      <input id="txtLozinka" [(ngModel)]="txtLozinka" class="form-control" style="color: #446878" type="password">
+    </div>
+  </div>
+
+
+  <button class="btn btn-primary mb-3" style="background-image: linear-gradient(lightblue, white); border-color:transparent; color: #446878" (click)="btnLogin()">Logiraj se</button>
+  <br>
+  <a routerLink="/registracija" style="color: #446878">Registracija</a>
+</div>

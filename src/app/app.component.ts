@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
+import {MojConfig} from "./moj-config";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'OnlinePGP';
+
+  constructor(private httpKlient : HttpClient,private router:Router) { }
+
+  LogOutFunction() {
+    localStorage.clear();
+    this.router.navigateByUrl("/login")
+  }
 }
