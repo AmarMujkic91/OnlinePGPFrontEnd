@@ -32,7 +32,8 @@ import { EditEventComponent } from './eventi/edit-event/edit-event.component';
       {path:'news',component:NewsComponent},
       {path:'login',component:LoginComponent},
       {path:'jobs',component:JobsComponent},
-      {path:'adminDashboard',component:AdminDashboardComponent}
+      {path:'adminDashboard',component:AdminDashboardComponent},
+      {path:'editEvent',component:EditEventComponent},
     ]),
     FormsModule,
     HttpClientModule
